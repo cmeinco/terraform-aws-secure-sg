@@ -11,7 +11,7 @@ import os
 import urllib2
 response = urllib2.urlopen('http://checkip.amazonaws.com/')
 ip = response.read().strip()
-#print ip
+print("External IP: {}".format(ip))
 
 from templite import Templite
 
