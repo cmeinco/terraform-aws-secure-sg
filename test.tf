@@ -1,6 +1,6 @@
 # Template for initial configuration bash script
 data "template_file" "init" {
-  template = "${file("templates/secure-sg.tf")}"
+  template = "${file("templates/main.tf")}"
 
   vars {
     homeip = "${data.http.checkip.body}"
@@ -22,3 +22,4 @@ data "http" "checkip" {
   #  "Accept" = "application/text"
   #}
 }
+
